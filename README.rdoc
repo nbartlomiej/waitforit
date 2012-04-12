@@ -1,0 +1,29 @@
+=waitforit
+
+==About
+
+Simple utility for simulating slow connection on OSX. Wrapper around shell
+commands. Inspired by {Simulating slow network in OSX}[http://barkingiguana.com/2009/12/04/simulating-slow-or-laggy-network-connections-in-os-x/].
+
+Note: is very buggy.
+
+==Usage
+
+    Running main program:
+      $ waitforit start 3000
+
+    Removing the bandwidth limit:
+      $ waitforit stop 3000
+
+==TODO
+
+Needs lots of improvement. Sample ideas:
+
+* Tests!
+* Listing all active bandwidth limits.
+* More robust configuration (speed, delay).
+* Linux support
+
+==License
+
+MIT, see LICENSE file.
