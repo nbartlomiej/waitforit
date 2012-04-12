@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+# LOAD_PATH is a ruby construct, works in a similar fashion as $PATH
+$LOAD_PATH << "#{File.dirname(__FILE__)}/../lib"
+
+require 'waitforit'
+
+parser = Waitforit::Parser.new
+parser.run(ARGV)
+
